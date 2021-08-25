@@ -59,10 +59,7 @@ En cuanto a los TAGS digamos que son marcas para encontrar más fácilmente cier
 ## Haz un fork del repositorio creado para la práctica 2 del taller
 - Haz el fork de este proyecto
 - Clona el proyecto (puedes hacerlo por consola o IntelliJ)
-- Crea una rama nueva desde IntelliJ
-  - Git -> Branches -> New branch -> le asignamos un nombre a nuestra nueva rama "develop"
-  - Añade un fichero clientes.sql que tenga lo siguiente
-
+- Añade un fichero clientes.sql que tenga lo siguiente
    ```sql
       create table clientes(
          id int primary key auto_increment,
@@ -72,5 +69,54 @@ En cuanto a los TAGS digamos que son marcas para encontrar más fácilmente cier
          direccion varchar(50)
       );
    ```
+- Haz commit y push
+- Crea una rama nueva desde IntelliJ
+  - Git -> Branches -> New branch -> le asignamos un nombre a nuestra nueva rama "develop"
+- Modifica el fichero para que quede de la siguiente forma
+   ```sql
+      create table clientes(
+         id int primary key auto_increment,
+         nombre varchar(50),
+         apellidos varchar(60),
+         edad int,
+         direccion varchar(60)
+      );
+      select * from clientes;
+   ```     
+- Haz commit y push de la nueva rama y vuelve a la rama main
+- Ahora vamos a crear otra rama que se llamará feature/new_fields
+- Modifica el fichero para que quede de la siguiente forma
+   ```sql
+      create table clientes(
+         id int primary key auto_increment,
+         nombre varchar(50),
+         apellido1 varchar(50),
+         apellido2 varchar(50),
+         sexo varchar(1),
+         edad int,
+         direccion varchar(50)
+      );
+   ``` 
+- Haz commit y pushea los cambios y la rama
+- Fijate en qué cosas cambian en cada uno de los dos sitios.
+- Ahora vamos a [mergear los cambios](https://www.jetbrains.com/help/idea/resolving-conflicts.html#distributed-version-control-systems) de develop a feature/new_fields
+  - Git -> Merge -> Seleccionamos la rama con la que queremos mergear (develop)
+  - Nos saldrá un popup con el fichero y nos dirá que tenemos conflictos y varias opciones (Aceptar los de develop, quedarnos con los nuestros o mergear). Vamos a mergear!
+  - A la izquierda nos saldrán los que tenemos actualmente en nuestro repositorio local que corresponde a la rama feature/new_fields y a la derecha los de la rama develop. El resultado final es el centro. 
+  - Veremos que las líneas que no tienen conflictos importantes saldrán con unas flechas verdes y las que son complicadas de resolver en rojo. Si pulsamos en alguno la aspa X no se pasarán los cambios al centro.
+  - Mergea para que el resultado final sea lo siguiente:
+   ```sql
+      create table clientes(
+         id int primary key auto_increment,
+         nombre varchar(50),
+         apellido1 varchar(50),
+         apellido2 varchar(50),
+         sexo varchar(1),
+         edad int,
+         direccion varchar(60)
+      );
+      select * from clientes;
+   ``` 
+  - Ahora haz commit con los cambios y haz push del repositorio feature/new_fields a origin
 
-
+Vale, ahora tenemos feature/new_fields mergeado con los cambios de develop. Esto quiere decir que nuestro nuevo desarrollo ya está alineado con develop. Ahora verificaríamos que todo funciona correctamente y una vez esté todo ok será el momento de mergear nuestros cambios a develop.
