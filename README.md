@@ -120,3 +120,7 @@ En cuanto a los TAGS digamos que son marcas para encontrar más fácilmente cier
   - Ahora haz commit con los cambios y haz push del repositorio feature/new_fields a origin
 
 Vale, ahora tenemos feature/new_fields mergeado con los cambios de develop. Esto quiere decir que nuestro nuevo desarrollo ya está alineado con develop. Ahora verificaríamos que todo funciona correctamente y una vez esté todo ok será el momento de mergear nuestros cambios a develop.
+
+Así pues cámbiate a la rama develop y haz un merge desde develop para traerte los cambios de feature/new_fields. Esta vez al estar alineadas no habrán conflictos y el merge será "limpio".
+
+Una vez hayamos hecho el merge haremos el commit y el push a origin.
