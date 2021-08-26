@@ -8,7 +8,7 @@ Una forma de hacerlo es via consola, pero tal y como habréis podido comprobar g
 Para resolver los conflictos se puede realizar por consola (os dejo la info más abajo) pero en nuestro caso los resolveremos con las herramientas visuales que nos proporciona IntelliJ. 
 
 ## Merges y resolución de conflictos por consola
-No es necesario que hagáis por consola. Al menos para estas pruebas. Pero será interesante que le deis un vistazo a los siguientes enlaces ya que os serán de utilidad.
+No es necesario que hagáis por consola. Al menos para estas pruebas. Pero será interesante que le deis un vistazo a los siguientes enlaces ya que os serán de utilidad en el futuro. 
 
 ### Merges
 
