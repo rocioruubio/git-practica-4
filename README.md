@@ -52,8 +52,6 @@ En el siguiente gráfico veremos cómo desarrollar creando ramas según el workf
 
 De la rama develop salen y se fusionan las ramas de las mejoras a implementar y las ramas de preparación de código a producción release-. Cuando hay un error en producción a corregir, crearemos una rama hotfix- que saldrá y se fusionará en master para desplegar a producción y en develop para continuar desarrollando las nuevas funcionalidades sin bugs.
 
-Extension para automatizar GIT flow. https://github.com/nvie/gitflow. Ofrece comandos para facilitar la creacion de features, hotfix, etc…
-
 En cuanto a los TAGS digamos que son marcas para encontrar más fácilmente ciertos momentos de un proyecto como puede ser una Release o un cambio importante a remarcar.
 
 ## Haz un fork del repositorio creado para la práctica 4 del taller
