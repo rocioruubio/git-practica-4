@@ -124,3 +124,5 @@ Vale, ahora tenemos feature/new_fields mergeado con los cambios de develop. Esto
 Así pues cámbiate a la rama develop y haz un merge desde develop para traerte los cambios de feature/new_fields. Esta vez al estar alineadas no habrán conflictos y el merge será "limpio".
 
 Una vez hayamos hecho el merge haremos el commit y el push a origin.
+
+Por último haremos una solicitud de Pull Request desde develop a main para dar por finalizado el desarrollo completamente.
