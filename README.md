@@ -56,7 +56,7 @@ Extension para automatizar GIT flow. https://github.com/nvie/gitflow. Ofrece com
 
 En cuanto a los TAGS digamos que son marcas para encontrar más fácilmente ciertos momentos de un proyecto como puede ser una Release o un cambio importante a remarcar.
 
-## Haz un fork del repositorio creado para la práctica 2 del taller
+## Haz un fork del repositorio creado para la práctica 4 del taller
 - Haz el fork de este proyecto
 - Clona el proyecto (puedes hacerlo por consola o IntelliJ)
 - Añade un fichero clientes.sql que tenga lo siguiente
