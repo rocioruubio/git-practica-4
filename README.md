@@ -1,4 +1,4 @@
-# git-practica-2
+# git-practica-3
 Segunda práctica de git. Configurar IntelliJ y hacer algunos merges con conflictos.
 
 Para esta segunda práctica vamos a hacer algunos merges que tendrán conflictos. Es decir, git no será capaz de resolver por sí solo los conflictos entre los cambios de dos ramas y tendremos que resolverlos nosotros. 
